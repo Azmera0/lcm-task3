@@ -8,7 +8,7 @@ const getGSD=(a,b) =>{
 }
  return a;
 };
-app.get('/azmera9104@gmail.com',(req,res)=>{
+app.get('/azmera9104_gmail_com',(req,res)=>{
     const {x,y}=req.query;
     const numX=Number(x);
     const numY=Number(y);

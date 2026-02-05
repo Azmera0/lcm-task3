@@ -14,9 +14,9 @@ app.get('/azmera9104_gmail_com',(req,res)=>{
     const numY=Number(y);
 
     if( !Number.isInteger(numX) || !Number.isInteger(numY) || numX <= 0 || numY <= 0){
-        return res.type('text/plain').send(NaN);
+        return res.type('text/plain').send("NaN");
     }
-    const lcm = (numX * numY) /getGSD(numX,numY);
+    const lcm = (numX / getGSD(numX, numY)) * numY;
     res.type('text/plain').send(lcm.toString());
 });
 
